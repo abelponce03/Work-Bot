@@ -23,6 +23,7 @@ y qué espera aprobación; y ninguna cuenta personal queda bloqueada por usarla.
 | Telegram | Cuenta personal del usuario, con topes diarios bajos. |
 | LinkedIn / Facebook | Modo seguro: sin automatizar con sesión iniciada. Facebook queda fuera de alcance por ahora. |
 | IA | Sin IA: reglas, diccionarios de palabras clave y plantillas. El puntaje y el redactor quedan detrás de una interfaz para poder enchufar un modelo después. |
+| Sistema | La PC del usuario es Linux: el arranque automático y el empaquetado de la fase 4 se hacen para Linux. |
 
 ## 3. Restricciones que condicionan el diseño
 
@@ -219,16 +220,17 @@ Cada fase tiene su propio plan de implementación y deja algo utilizable.
    aprobar desde el teléfono.
 3. **LinkedIn seguro y postulación asistida.** Listado público, correos de
    alertas, flujo asistido para formularios.
-4. **Empaquetado.** Arranque con el sistema, icono en la bandeja, instalador; y,
-   opcional, guía para correr el núcleo en un servidor.
+4. **Empaquetado para Linux.** Arranque con la sesión (servicio de usuario de
+   systemd), icono en la bandeja y script de instalación; y, opcional, guía para
+   correr el núcleo en un servidor.
 
 ## 13. Paquete de postulación (fuera del código)
 
 Lo que la app envía importa tanto como la app:
 
-- CV de una página en español y en inglés, en PDF, con los proyectos que mejor
-  demuestran nivel (compilador, SAT solver, la suite full-stack con React,
-  FastAPI y Docker, el sistema de pagos) y un enlace a cada uno.
+- CV de dos páginas como máximo, en español y en inglés, en PDF: primero los
+  proyectos entregados a clientes y después los de investigación y sistemas,
+  con un enlace a cada repositorio público.
 - Perfil de GitHub con esos repositorios fijados y un README claro en cada uno.
 - Una línea de disponibilidad y zona horaria (UTC-5, coincide con la costa este
   de EE. UU. y buena parte de Latinoamérica).

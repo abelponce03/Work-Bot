@@ -1,0 +1,12 @@
+# Datos personales y secretos: nunca al repositorio
+perfil/
+.env
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Datos locales de la app
+*.sqlite3
+*.db
